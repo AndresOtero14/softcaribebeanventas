@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresa un Vendedor</title>
+    <link rel="stylesheet" href="../css/stylesVendedor.css">
+    <script src="/ventas/dto/vendedordto.js"></script>
+    <script src="/ventas/locator/locatorVendedor.js"></script>
+    <script src="/ventas/view/Vendedor.js"></script>
+</head>
+<body>
+    <h3>Ingresar Vendedor</h3>
+
+    <div class="container">
+
+        <div  class="div">
+            <label for="">Id: </label>
+            <input type="text" placeholder="Ingrese la Id" id="nmvendedor">
+        </div>
+
+        <div class="div">
+            <label for=""> Documento: </label>
+            <input type="text" placeholder="Ingrese su documento" id="documento">
+        </div>
+        <div class="div">
+            <label for=""> Nombre: </label>
+            <input type="text" placeholder="Ingrese Nombre" id="dsnombres">
+        </div>
+        <div class="div">
+            <label for=""> Apellido: </label>
+            <input type="text" placeholder="Ingrese apellido" id="dsapellido">
+
+        </div>
+        <div class="div">
+            <label for=""> Dirección: </label>
+            <input type="text" placeholder="Ingrese Dirección" id="dsdireccion">
+        </div>
+       
+    </div>
+
+    <div class="container">
+        
+        <button class="button"><a class="aa" href="producto.html">Atras</a></button>
+
+        <button type="button" class="button"  onclick="Save()">Insertar</button>
+        
+        <button type="button" class="button"  onclick="selectall()">Mostrar</button>
+    </div>
+
+    <div class="tab">
+    
+        <table class="table" id="table">
+            <thead class="cuerpo">
+                <tr class="cabecerath">
+                    <th class="nmcliente">N° vendedor</th>
+                    <th class="documento">Id</th>
+                    <th class="dsnombres">Nombre</th>
+                    <th class="dsapellido">Apellido</th>
+                    <th class="dsdireccion">Direccion</th>
+                </tr>
+            <tbody id="listaBody">
+    
+            </tbody>
+            </thead>
+        </table>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precio</title>
+    <link rel="stylesheet" href="../css/stylesPrecio.css">
+    <script src="/ventas/dto/preciodto.js"></script>
+    <script src="/ventas/locator/locatorPrecio.js"></script>
+    <script src="/ventas/view/Precio.js"></script>
+</head>
+<body>
+    <h3>Ingresar Precio </h3>
+
+    <div class="container">
+
+        <div  class="div">
+            <label for="">Id: </label>
+            <input type="number" placeholder="Ingrese un codigo" id="nmprecio">
+        </div>
+
+        <div class="div">
+            <label for=""> FK_sku: </label>
+            <input type="text" placeholder="Ingrese documento" id="fk_sku">
+        </div>
+        <div class="div">
+            <label for=""> Precio: </label>
+            <input type="number" placeholder="Ingrese nombre" id="precio">
+        </div>
+        <div class="div">
+            <label for=""> fecha inicio: </label>
+            <input type="date" placeholder="fecha inicio" id="fedesde">
+
+        </div>
+        <div class="div">
+            <label for=""> fecha final: </label>
+            <input type="date" placeholder="fecha final" id="fehasta">
+        </div>
+       
+    </div>
+
+    <div class="container">
+        
+        <button class="button"><a href="producto.html">Atras</a></button>
+        
+        <button type="button" class="button"  onclick="Save()">Insertar</button>
+        
+        <button type="button" class="button"  onclick="selectall()">Mostrar</button>
+    </div>
+
+
+    <div class="tab">
+    
+        <table class="table" id="table">
+            <thead class="cuerpo">
+                <tr class="cabecerath">
+                    <th class="nmprecio">Id precio</th>
+                    <th class="fk_sku">Id producto</th>
+                    <th class="precio">Precio</th>
+                    <th class="fedesde">Desde</th>
+                    <th class="fehasta">Hasta</th>
+                </tr>
+            <tbody id="listaBody">
+    
+            </tbody>
+            </thead>
+        </table>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

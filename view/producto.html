@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+   <link rel="stylesheet" href="../css/stylesproducto.css">
+   <script src="/ventas/dto/productodto.js"></script>
+   <script src="/ventas/locator/locatorProducto.js"></script>
+   <script src="/ventas/view/Producto.js"></script>
+
+</head>
+<body>
+    
+    <h1>Bienvenido</h1>
+
+    <div class="container">
+        <nav class="nave">
+            <ul class="lista">
+                <li>
+                    <a  href="Cliente.html">Clientes</a>
+                
+                
+                </li>
+                <li>
+                    <a href="Vendedor.html"> Vendedor</a>
+                </li>
+                <li>
+                    <a href="Precio.html">Precio</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <h3>Ingrese un producto</h3>
+
+    <div class="container">
+
+        <div  class="div">
+            <label for="">Codigo: </label>
+            <input type="text" placeholder="Ingrese un codigo" id="sku">
+        </div>
+
+        <div class="div">
+            <label for=""> Nombre: </label>
+            <input type="text" placeholder="Ingrese un producto" id="dsproducto">
+        </div> 
+        
+    </div>
+    
+    <div class="container">
+    
+    
+        <button type="button" class="button" onclick="Save()">Insertar</button>
+    
+    
+    
+        <button type="button" class="button" onclick="selectall()">Mostrar</button>
+
+        <button type="button" class="button" onclick="Delete()">Eliminar</button>
+    
+    
+    
+    </div>
+
+    <div class="tab">
+    
+        <table class="table" id="table">
+            <thead class="cuerpo">
+                <tr class="cabecerath">
+                    <th class="sku">Sku</th>
+                    <th class="producto">Producto</th>
+                </tr>
+            <tbody id="listaBody">
+    
+            </tbody>
+            </thead>
+        </table>
+    </div>
+
+
+    
+    
+
+    <!-- <div class="container">
+        <table>
+            <thead>
+               <tr>
+                <td>Sku</td>
+                <td>Producto</td>
+               </tr>
+            </thead>
+        
+        </table>
+    </div>  -->
+   
+    
+
+    
+    
+</body>
+</html>
